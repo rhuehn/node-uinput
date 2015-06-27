@@ -120,7 +120,6 @@ var input_event = bindings.input_event;
 
 function send_event(stream, type, code, value, cb) {
     var ev = input_event(type, code, value);
-    stream.once('error', cb);
     stream.write(ev, function(err) {
         if (err) {
             return cb(err);
