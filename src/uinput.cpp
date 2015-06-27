@@ -711,26 +711,26 @@ void Initialize(Handle<Object> target) {
     target->Set(NanNew("FF_CNT"), NanNew(FF_CNT));
 
     /* uinput.h */
-    target->Set(NanNew("UI_DEV_CREATE"), NanNew(UI_DEV_CREATE));
-    target->Set(NanNew("UI_DEV_DESTROY"), NanNew(UI_DEV_DESTROY));
-    target->Set(NanNew("UI_SET_EVBIT"), NanNew(UI_SET_EVBIT));
-    target->Set(NanNew("UI_SET_KEYBIT"), NanNew(UI_SET_KEYBIT));
-    target->Set(NanNew("UI_SET_RELBIT"), NanNew(UI_SET_RELBIT));
-    target->Set(NanNew("UI_SET_ABSBIT"), NanNew(UI_SET_ABSBIT));
-    target->Set(NanNew("UI_SET_MSCBIT"), NanNew(UI_SET_MSCBIT));
-    target->Set(NanNew("UI_SET_LEDBIT"), NanNew(UI_SET_LEDBIT));
-    target->Set(NanNew("UI_SET_SNDBIT"), NanNew(UI_SET_SNDBIT));
-    target->Set(NanNew("UI_SET_FFBIT"), NanNew(UI_SET_FFBIT));
-    target->Set(NanNew("UI_SET_PHYS"), NanNew(UI_SET_PHYS));
-    target->Set(NanNew("UI_SET_SWBIT"), NanNew(UI_SET_SWBIT));
-    target->Set(NanNew("UI_SET_PROPBIT"), NanNew(UI_SET_PROPBIT));
-    target->Set(NanNew("UI_BEGIN_FF_UPLOAD"), NanNew(UI_BEGIN_FF_UPLOAD));
-    target->Set(NanNew("UI_END_FF_UPLOAD"), NanNew(UI_END_FF_UPLOAD));
-    target->Set(NanNew("UI_BEGIN_FF_ERASE"), NanNew(UI_BEGIN_FF_ERASE));
-    target->Set(NanNew("UI_END_FF_ERASE"), NanNew(UI_END_FF_ERASE));
-    target->Set(NanNew("EV_UINPUT"), NanNew(EV_UINPUT));
-    target->Set(NanNew("UI_FF_UPLOAD"), NanNew(UI_FF_UPLOAD));
-    target->Set(NanNew("UI_FF_ERASE"), NanNew(UI_FF_ERASE));
+    target->Set(NanNew("UI_DEV_CREATE"), NanNew((uint32_t)UI_DEV_CREATE));
+    target->Set(NanNew("UI_DEV_DESTROY"), NanNew((uint32_t)UI_DEV_DESTROY));
+    target->Set(NanNew("UI_SET_EVBIT"), NanNew((uint32_t)UI_SET_EVBIT));
+    target->Set(NanNew("UI_SET_KEYBIT"), NanNew((uint32_t)UI_SET_KEYBIT));
+    target->Set(NanNew("UI_SET_RELBIT"), NanNew((uint32_t)UI_SET_RELBIT));
+    target->Set(NanNew("UI_SET_ABSBIT"), NanNew((uint32_t)UI_SET_ABSBIT));
+    target->Set(NanNew("UI_SET_MSCBIT"), NanNew((uint32_t)UI_SET_MSCBIT));
+    target->Set(NanNew("UI_SET_LEDBIT"), NanNew((uint32_t)UI_SET_LEDBIT));
+    target->Set(NanNew("UI_SET_SNDBIT"), NanNew((uint32_t)UI_SET_SNDBIT));
+    target->Set(NanNew("UI_SET_FFBIT"), NanNew((uint32_t)UI_SET_FFBIT));
+    target->Set(NanNew("UI_SET_PHYS"), NanNew((uint32_t)UI_SET_PHYS));
+    target->Set(NanNew("UI_SET_SWBIT"), NanNew((uint32_t)UI_SET_SWBIT));
+    target->Set(NanNew("UI_SET_PROPBIT"), NanNew((uint32_t)UI_SET_PROPBIT));
+    target->Set(NanNew("UI_BEGIN_FF_UPLOAD"), NanNew((uint32_t)UI_BEGIN_FF_UPLOAD));
+    target->Set(NanNew("UI_END_FF_UPLOAD"), NanNew((uint32_t)UI_END_FF_UPLOAD));
+    target->Set(NanNew("UI_BEGIN_FF_ERASE"), NanNew((uint32_t)UI_BEGIN_FF_ERASE));
+    target->Set(NanNew("UI_END_FF_ERASE"), NanNew((uint32_t)UI_END_FF_ERASE));
+    target->Set(NanNew("EV_UINPUT"), NanNew((uint32_t)EV_UINPUT));
+    target->Set(NanNew("UI_FF_UPLOAD"), NanNew((uint32_t)UI_FF_UPLOAD));
+    target->Set(NanNew("UI_FF_ERASE"), NanNew((uint32_t)UI_FF_ERASE));
     target->Set(NanNew("UINPUT_MAX_NAME_SIZE"), NanNew(UINPUT_MAX_NAME_SIZE));
 
 
