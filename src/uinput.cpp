@@ -1391,41 +1391,41 @@ void Initialize(Local<Object> target) {
     target->Set(Nan::New("UI_DEV_CREATE").ToLocalChecked(),
                 Nan::New((uint32_t)UI_DEV_CREATE));
     target->Set(Nan::New("UI_DEV_DESTROY").ToLocalChecked(),
-                NanNew((uint32_t)UI_DEV_DESTROY));
+                Nan::New((uint32_t)UI_DEV_DESTROY));
     target->Set(Nan::New("UI_SET_EVBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_EVBIT));
+                Nan::New((uint32_t)UI_SET_EVBIT));
     target->Set(Nan::New("UI_SET_KEYBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_KEYBIT));
+                Nan::New((uint32_t)UI_SET_KEYBIT));
     target->Set(Nan::New("UI_SET_RELBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_RELBIT));
+                Nan::New((uint32_t)UI_SET_RELBIT));
     target->Set(Nan::New("UI_SET_ABSBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_ABSBIT));
+                Nan::New((uint32_t)UI_SET_ABSBIT));
     target->Set(Nan::New("UI_SET_MSCBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_MSCBIT));
+                Nan::New((uint32_t)UI_SET_MSCBIT));
     target->Set(Nan::New("UI_SET_LEDBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_LEDBIT));
+                Nan::New((uint32_t)UI_SET_LEDBIT));
     target->Set(Nan::New("UI_SET_SNDBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_SNDBIT));
+                Nan::New((uint32_t)UI_SET_SNDBIT));
     target->Set(Nan::New("UI_SET_FFBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_FFBIT));
+                Nan::New((uint32_t)UI_SET_FFBIT));
     target->Set(Nan::New("UI_SET_PHYS").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_PHYS));
+                Nan::New((uint32_t)UI_SET_PHYS));
     target->Set(Nan::New("UI_SET_SWBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_SWBIT));
+                Nan::New((uint32_t)UI_SET_SWBIT));
     target->Set(Nan::New("UI_SET_PROPBIT").ToLocalChecked(),
-                NanNew((uint32_t)UI_SET_PROPBIT));
+                Nan::New((uint32_t)UI_SET_PROPBIT));
     target->Set(Nan::New("UI_BEGIN_FF_UPLOAD").ToLocalChecked(),
-                NanNew((uint32_t)UI_BEGIN_FF_UPLOAD));
+                Nan::New((uint32_t)UI_BEGIN_FF_UPLOAD));
     target->Set(Nan::New("UI_END_FF_UPLOAD").ToLocalChecked(),
-                NanNew((uint32_t)UI_END_FF_UPLOAD));
+                Nan::New((uint32_t)UI_END_FF_UPLOAD));
     target->Set(Nan::New("UI_BEGIN_FF_ERASE").ToLocalChecked(),
-                NanNew((uint32_t)UI_BEGIN_FF_ERASE));
+                Nan::New((uint32_t)UI_BEGIN_FF_ERASE));
     target->Set(Nan::New("UI_END_FF_ERASE").ToLocalChecked(),
-                NanNew((uint32_t)UI_END_FF_ERASE));
+                Nan::New((uint32_t)UI_END_FF_ERASE));
     target->Set(Nan::New("EV_UINPUT").ToLocalChecked(),
                 Nan::New(EV_UINPUT));
     target->Set(Nan::New("UI_FF_UPLOAD").ToLocalChecked(),
-                NanNew((uint32_t)UI_FF_UPLOAD));
+                Nan::New((uint32_t)UI_FF_UPLOAD));
     target->Set(Nan::New("UI_FF_ERASE").ToLocalChecked(),
                 Nan::New((uint32_t)UI_FF_ERASE));
     target->Set(Nan::New("UINPUT_MAX_NAME_SIZE").ToLocalChecked(),
