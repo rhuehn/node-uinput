@@ -130,6 +130,15 @@ function send_event(stream, type, code, value, cb) {
     });
 }
 
+function send_event_no_syn(stream, type, code, value, cb) {
+    var ev = input_event(type, code, value);
+    stream.write(ev, function(err) {
+        if (err) {
+            return cb(err);
+        }
+    });
+}
+
 function key_event(stream, code, cb) {
     /* press / click */
     send_event(stream, bindings.EV_KEY, code, 1, function(err) {
@@ -142,10 +151,24 @@ function key_event(stream, code, cb) {
     });
 }
 
+function key_event_no_syn(stream, code, cb) {
+    /* press / click */
+    send_event_no_syn(stream, bindings.EV_KEY, code, 1, function(err) {
+        if (err) {
+            return cb(err);
+        }
+
+        /* release / unclick */
+        send_event_no_syn(stream, bindings.EV_KEY, code, 0, cb);
+    });
+}
+
 module.exports = bindings;
 delete module.exports.input_event;
 module.exports.setup = setup;
 module.exports.create = create;
 module.exports.send_event = send_event;
+module.exports.send_event_no_syn = send_event_no_syn;
 module.exports.key_event = key_event;
+module.exports.key_event_no_syn = key_event_no_syn;
 
